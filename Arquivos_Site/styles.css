@@ -1,0 +1,502 @@
+@font-face {
+  font-family: Electrolize;
+  src: url(Fontes/Electrolize-Regular.ttf);
+}
+@font-face {
+  font-family: Tech;
+  src: url(Fontes/ShareTechMono-Regular.ttf);
+}
+@font-face {
+  font-family: orbitron;
+  src: url(Fontes/Orbitron-VariableFont_wght.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth; /* Sei que não aprendemos, mas um amigo me ensinou.*/
+}
+
+body {
+  background-color: rgb(0, 16, 37);
+  width: 100%;
+  height: 4200px;
+}
+#volteAoTopo {
+  color: transparent;
+  margin: auto;
+}
+header {
+  width: 1300px;
+  background-color: rgb(1, 23, 51);
+  height: 20px;
+  margin: auto;
+  position: relative;
+  align-items: center;
+  top: 40px; /*Talvez essa parte fique um pouco estranha, mas é pq originalmente a navegação ficaria lá embaixo, mas mudei pra ter um header mais aparente*/
+}
+#páginaInicial {
+  width: 1300px;
+  height: 760px;
+  background-color: rgb(1, 23, 51);
+  margin: auto;
+  margin-top: 40px;
+  position: static;
+}
+h1 {
+  width: 200px;
+  color: white;
+  position: relative;
+  top: 190px;
+  left: 145px;
+  background-color: rgb(1, 23, 51);
+  font-size: 100px;
+  font-family: Electrolize;
+  line-height: 1;
+}
+#ola {
+  color: white;
+  font-family: Electrolize;
+  position: relative;
+  top: 180px;
+  left: 151px;
+  font-weight: bold;
+  font-size: 20px;
+}
+#descriçãoRápida {
+  color: white;
+  position: relative;
+  top: 210px;
+  left: 150px;
+  font-family: Electrolize;
+  font-weight: bold;
+  font-size: 20px;
+}
+#decoração1 {
+  width: 233px;
+  height: 8px;
+  background-color: rgb(255, 49, 49);
+  border-radius: 30px;
+  position: relative;
+  top: 198px;
+  left: 150px;
+}
+#picture1 {
+  width: 550px;
+  position: relative;
+  left: 700px;
+  bottom: 195px;
+}
+#lista1 {
+  display: flex;
+  gap: 65px;
+  list-style: none;
+  width: 1100px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background: rgb(1, 23, 51);
+  background: radial-gradient(
+    circle,
+    rgba(1, 23, 51, 1) 50%,
+    rgba(255, 49, 49) 100%
+  ); /* Feito usando o cssgradient.io*/
+  border-radius: 50px;
+  position: absolute;
+  left: 100px;
+  top: 40px;
+}
+.nave {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Electrolize;
+}
+ul a {
+  text-decoration: none;
+  color: rgb(255, 49, 49);
+}
+ul a:hover {
+  background-color: rgb(255, 49, 49);
+  color: rgb(1, 23, 51);
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: background-color 0.8s ease, color 0.8s ease; /* Isso aq é muito leggal hahahah*/
+}
+#secSobreMim {
+  width: 1300px;
+  height: 900px;
+  background: rgb(1, 23, 51);
+  background: rgb(1, 23, 51);
+  background: rgb(1, 23, 51);
+  background: linear-gradient(
+    0deg,
+    rgba(1, 23, 51, 1) 0%,
+    rgba(0, 16, 37, 1) 15%,
+    rgba(0, 16, 37, 1) 50%,
+    rgba(0, 16, 37, 1) 85%,
+    rgba(1, 23, 51, 1) 100%
+  ); /* Feito usando o cssgradient.io*/
+  margin: auto;
+}
+#tituloSobreMim {
+  color: white;
+  font-family: Electrolize;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  top: 60px;
+  font-weight: bold;
+}
+.sublinhado {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 49, 49);
+  text-decoration-thickness: 4px;
+  text-underline-offset: 7px; /* QUE DIFICULDADE UM ALINHA TRÁZ MDS*/
+}
+#foto2 {
+  width: 400px;
+  position: relative;
+  top: 150px;
+  left: 100px;
+  border-radius: 20px;
+  opacity: 80%;
+}
+#decoração2 {
+  width: 5px;
+  height: 500px;
+  background-color: rgb(255, 49, 49);
+  border-radius: 100px;
+  position: relative;
+  left: 550px;
+  bottom: 350px;
+  opacity: 80%;
+}
+#textoSobreMim {
+  color: white;
+  width: 510px;
+  position: relative;
+  bottom: 780px;
+  left: 610px;
+  font-family: Tech;
+  font-size: 20px;
+  opacity: 80%;
+  line-height: 1.5;
+}
+#secHabilidades {
+  width: 1300px;
+  height: 750px;
+  margin: auto;
+  background-color: rgb(1, 23, 51);
+}
+#tituloHabilidades {
+  color: white;
+  font-family: Electrolize;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  top: 60px;
+  font-weight: bold;
+}
+.habilidades {
+  width: 210px;
+  border-radius: 35px;
+  transition: transform 0.3s ease-in-out;
+}
+.habilidades:hover {
+  transform: scale(1.1);
+}
+#divHabilidades {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+#textoHablidades {
+  color: white;
+  font-family: Tech;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+#secPortifolio {
+  width: 1300px;
+  height: 1050px;
+  margin: auto;
+  background: rgb(1, 23, 51);
+  background: rgb(1, 23, 51);
+  background: rgb(1, 23, 51);
+  background: linear-gradient(
+    0deg,
+    rgba(1, 23, 51, 1) 0%,
+    rgba(0, 16, 37, 1) 15%,
+    rgba(0, 16, 37, 1) 50%,
+    rgba(0, 16, 37, 1) 85%,
+    rgba(1, 23, 51, 1) 100%
+  ); /* Feito usando o cssgradient.io*/
+}
+#tituloPortifolio {
+  color: white;
+  font-family: Electrolize;
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  top: 60px;
+  font-weight: bold;
+}
+#decoração3 {
+  width: 5px;
+  height: 600px;
+  background-color: rgb(255, 49, 49);
+  border-radius: 100px;
+  position: relative;
+  left: 125px;
+  top: 150px;
+  opacity: 80%;
+  display: inline-block;
+}
+
+#recentes {
+  border: solid 1px rgb(255, 49, 49);
+  border-radius: 50px;
+  position: relative;
+  bottom: 160px;
+  left: 70px;
+  width: 470px;
+  display: inline-block;
+  height: 600px;
+}
+#geral {
+  border: solid 1px rgb(255, 49, 49);
+  border-radius: 50px;
+  position: relative;
+  bottom: 760px;
+  left: 315px;
+  height: 600px;
+  width: 600px;
+  display: inline-block;
+}
+#tituloRecentes {
+  color: white;
+  font-family: orbitron;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+#tituloGeral {
+  color: white;
+  font-family: orbitron;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+.imgExemplo1 {
+  width: 200px;
+  margin-top: 40px;
+  border-radius: 45px;
+  transition: transform 0.3s ease-in-out;
+}
+#divImagemRecente {
+  display: flex; /* Por algum motivo o block(talvez por serem img?) não funcionou aq, fiquei 30 minutos pesquisando um para deixar uma img embaixo da outra kakakakkaka*/
+  flex-direction: column;
+  align-items: center;
+}
+.imgExemplo1:hover {
+  transform: scale(1.1);
+}
+#divPaiGeral {
+  text-align: center;
+}
+.divImagemGeral {
+  display: flex;
+  margin: auto;
+  width: 500px;
+}
+#div24 {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+#div25 {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.corTexto {
+  color: rgb(255, 49, 49);
+}
+#divContato {
+  position: relative;
+  bottom: 1725px;
+  left: 138px;
+}
+.iconesContato {
+  width: 50px;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.iconesContato:hover {
+  transform: scale(1.1);
+}
+#volteFixo {
+  width: 75px;
+  position: fixed;
+  left: 1300px;
+  top: 580px;
+  z-index: 3;
+}
+#secHistorico {
+  width: 1300px;
+  height: 900px;
+  margin: auto;
+  background-color: rgb(1, 23, 51);
+}
+#tituloHistorico {
+  color: white;
+  font-family: Electrolize;
+  font-size: 80px;
+  text-align: center;
+  font-weight: bold;
+}
+.formcaoAcademica {
+  color: white;
+  font-family: Electrolize;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 70px;
+}
+#divInfnet {
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+}
+#iframeMaps {
+  border-radius: 100px;
+  opacity: 50%;
+  position: relative;
+  left: 195px;
+  border: 4px solid rgb(255, 49, 49);
+}
+#logoInfnet {
+  width: 170px;
+  height: 170px;
+  position: relative;
+  right: 665px;
+  margin-top: 19px;
+  transition: transform 0.3s ease-in-out;
+}
+#logoInfnet:hover {
+  transform: scale(1.1);
+}
+h4 {
+  width: 250px;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  text-align: left;
+  font-size: 25px;
+  font-family: Electrolize;
+  line-height: 1;
+}
+#tituloInfnet {
+  position: relative;
+  right: 650px;
+  margin-top: 25px;
+}
+#textoInfnet {
+  width: 210px;
+  color: rgb(255, 255, 255);
+
+  position: relative;
+  right: 650px;
+  text-align: left;
+  font-size: 19px;
+  font-family: Electrolize;
+  line-height: 1;
+  margin-top: 15px;
+}
+divTextosInfnet {
+}
+#divLeila {
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  width: 910px;
+  height: 200px;
+  border: 3px solid rgb(255, 49, 49);
+  border-radius: 100px;
+  background-image: url("https://www.jll.com.br/images/brazil/Materia_Boutique_Maio_2024_Banner.jpg");
+  background-size: cover;
+  opacity: 50%;
+  position: relative;
+  bottom: 370px;
+}
+#logoLeila {
+  width: 170px;
+  height: 170px;
+  opacity: 100%;
+  margin-top: 19px;
+  transition: transform 0.3s ease-in-out;
+  position: absolute;
+  left: 330px;
+  top: 4135px;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+#logoLeila:hover {
+  transform: scale(1.1);
+}
+#tituloLeila {
+  width: 600px;
+  position: relative;
+  left: 510px;
+  bottom: 550px;
+}
+#spanLeila {
+  font-size: 19px;
+}
+#paragrafoLeila {
+  color: white;
+  font-family: Electrolize;
+  text-align: left;
+  width: 650px;
+  position: relative;
+  bottom: 530px;
+  left: 510px;
+}
+#rodape {
+  background: rgb(0, 16, 37);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 16, 37, 1) 50%,
+    rgba(1, 23, 51, 1) 100%
+  );
+  margin: auto;
+  width: 1300px;
+  height: 150px;
+  margin-top: -450px;
+  align-items: center;
+}
+#nome {
+  color: rgb(255, 49, 49);
+  font-family: Orbitron;
+  font-style: italic;
+  text-align: center;
+  margin-top: 50px;
+}
+#obrigado {
+  color: rgb(255, 49, 49);
+  font-family: Orbitron;
+  font-style: italic;
+  text-align: center;
+  font-size: 25px;
+}
+#tituloProfissional {
+  color: white;
+  font-family: Electrolize;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  bottom: 390px;
+}
