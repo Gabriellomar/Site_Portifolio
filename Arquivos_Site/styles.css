@@ -482,6 +482,7 @@ h4 {
   font-style: italic;
   text-align: center;
   margin-top: 50px;
+  list-style: none;
 }
 #obrigado {
   color: rgb(255, 49, 49);
@@ -489,6 +490,7 @@ h4 {
   font-style: italic;
   text-align: center;
   font-size: 25px;
+  list-style: none;
 }
 #tituloProfissional {
   color: white;
